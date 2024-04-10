@@ -1,0 +1,64 @@
+.mainLayout {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 120px 160px;
+  gap: 80px;
+  width: 100%;
+}
+
+.leftColumn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.coverPart {
+  width: 100%;
+}
+
+.wrapper {
+  height: 0;
+  position: relative;
+  width: 100%;
+}
+
+.imageMedia {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.rightColumn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.contentPart {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+}
+
+.blogFont {
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+}

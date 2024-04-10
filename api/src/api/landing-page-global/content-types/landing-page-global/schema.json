@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_page_globals",
+  "info": {
+    "singularName": "landing-page-global",
+    "pluralName": "landing-page-globals",
+    "displayName": "LandingPageGlobal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "navigation": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "global.navigation"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "global.footer"
+    }
+  }
+}

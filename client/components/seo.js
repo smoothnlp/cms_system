@@ -13,6 +13,11 @@ const Seo = ({ seo }) => {
   const preventIndexing = delve(seo, 'preventIndexing');
   const metaDescription = delve(seo, 'metaDescription');
 
+  console.log('metaSocial ===>>> ', metaSocial);
+
+  const twitterMeta =
+    metaSocial && metaSocial.find((item) => item.socialNetwork == 'Twitter');
+
   return (
     <Head>
       <title>{metaTitle}</title>
@@ -20,35 +25,39 @@ const Seo = ({ seo }) => {
 
       <meta name="twitter:card" content="summary" />
 
-      {metaSocial &&
-        metaSocial.find((item) => item.socialNetwork == 'Twitter') && (
-          <>
-            <meta
-              data-hid="twitter:title"
-              name="twitter:title"
-              property="twitter:title"
-              content={item.title}
-            />
-            <meta
-              data-hid="twitter:description"
-              name="twitter:description"
-              property="twitter:description"
-              content={item.description}
-            />
-            <meta
-              data-hid="twitter:image"
-              name="twitter:image"
-              property="twitter:image"
-              content={getStrapiMedia(delve(item.image, 'data.attributes.url'))}
-            />
-            <meta
-              data-hid="twitter:image:alt"
-              name="twitter:image:alt"
-              property="twitter:image:alt"
-              content={delve(item.image, 'data.attributes.alternativeText')}
-            />
-          </>
-        )}
+      {twitterMeta && (
+        <>
+          <meta
+            data-hid="twitter:title"
+            name="twitter:title"
+            property="twitter:title"
+            content={twitterMeta.title}
+          />
+          <meta
+            data-hid="twitter:description"
+            name="twitter:description"
+            property="twitter:description"
+            content={twitterMeta.description}
+          />
+          <meta
+            data-hid="twitter:image"
+            name="twitter:image"
+            property="twitter:image"
+            content={getStrapiMedia(
+              delve(twitterMeta.image, 'data.attributes.url')
+            )}
+          />
+          <meta
+            data-hid="twitter:image:alt"
+            name="twitter:image:alt"
+            property="twitter:image:alt"
+            content={delve(
+              twitterMeta.image,
+              'data.attributes.alternativeText'
+            )}
+          />
+        </>
+      )}
 
       <meta
         prefix="og: http://ogp.me/ns#"

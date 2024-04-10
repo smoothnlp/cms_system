@@ -2,12 +2,13 @@ import delve from 'dlv';
 import Link from 'next/link';
 
 const Cta = ({ title, text, buttons, theme }) => {
+  console.log('buttons ===>>> ', buttons);
   return (
     <div className={`bg-${theme}`}>
       <div className="lg:flex lg:items-center lg:justify-between w-2/3 mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
           {title && <span className="block">{title}</span>}
-          {text && <span className="block text-white">{text}</span>}
+          {text && <span className="block text-white mt-4">{text}</span>}
         </h2>
         <div className="lg:mt-0 lg:flex-shrink-0 space-x-2">
           {buttons &&

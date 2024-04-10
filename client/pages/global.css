@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+a:hover {
+  color: #c899d9;
+}
+
+.markdown > * {
+  all: revert;
+}

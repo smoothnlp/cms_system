@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blocks_use_cases",
+  "info": {
+    "displayName": "UseCases"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.case-item"
+    }
+  }
+}

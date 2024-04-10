@@ -38,6 +38,14 @@
         }
       },
       "component": "global.footer"
+    },
+    "email_txt": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

@@ -8,7 +8,6 @@
     "description": ""
   },
   "options": {
-    "reviewWorkflows": true,
     "draftAndPublish": true
   },
   "pluginOptions": {
@@ -39,7 +38,6 @@
       "type": "dynamiczone",
       "components": [
         "blocks.cta-command-line",
-        "blocks.cta",
         "blocks.faq",
         "blocks.features-with-images",
         "blocks.features",
@@ -48,7 +46,9 @@
         "blocks.related-articles",
         "blocks.related-restaurants",
         "blocks.team",
-        "blocks.testimonial"
+        "blocks.testimonial",
+        "blocks.cta",
+        "blocks.landing-page-hero"
       ],
       "pluginOptions": {
         "i18n": {

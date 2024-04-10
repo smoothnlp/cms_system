@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_whats",
+  "info": {
+    "displayName": "What"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item"
+    },
+    "img_url": {
+      "type": "string"
+    }
+  }
+}

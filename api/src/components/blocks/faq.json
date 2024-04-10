@@ -16,7 +16,8 @@
       "enum": [
         "primary",
         "secondary",
-        "muted"
+        "muted",
+        "dark"
       ],
       "default": "muted"
     },
@@ -24,6 +25,9 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.question-answer"
+    },
+    "img_url": {
+      "type": "string"
     }
   }
 }

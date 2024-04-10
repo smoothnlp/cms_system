@@ -20,7 +20,7 @@ export default async (req, res) => {
     return res.status(401).json({ message: 'Invalid slug' });
   }
   res.setPreviewData({});
-
+  console.log('previewData ===>> ', previewData);
   res.writeHead(307, {
     Location: previewData.slug,
   });

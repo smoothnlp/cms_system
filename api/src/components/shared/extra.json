@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_extras",
+  "info": {
+    "displayName": "Extra",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card"
+    }
+  }
+}

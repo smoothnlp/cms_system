@@ -1,0 +1,122 @@
+.page-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 120px 160px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 1280px;
+  width: 100%;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+.banner-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 64px;
+  width: 100%;
+}
+.content-part {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 580px;
+  min-width: 320px;
+}
+.common_title_desc_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+.page-title {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px;
+  margin: 0;
+}
+
+.index-module {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px 16px;
+}
+
+.index-module--h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.index-module--content {
+  padding: 0 20px;
+  transition: all .25s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.index-module--faqs {
+  margin-top: 40px;
+}
+
+.page-description {
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+
+  color: #4f5964;
+}
+.transcribe-button {
+  background: rgb(48, 137, 240);
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 16px 32px;
+  transition: all 0.2s ease-in-out;
+}
+.cover-part {
+  flex-basis: 640px;
+}
+.logo-part {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.logo-list-title {
+  align-items: center;
+  color: #7b838c;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  width: 100%;
+}
+.logo-list {
+  align-items: center;
+  column-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 12px;
+}
+.logo-image {
+  height: 40px;
+  object-fit: contain;
+}

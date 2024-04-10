@@ -17,5 +17,6 @@ export const restaurantAdapter = ({
 };
 
 export const restaurantsAdapter = (restaurants) => {
+  console.log('restaurants ===>> ', restaurants);
   return restaurants.map((restaurant) => restaurantAdapter({ ...restaurant }));
 };

@@ -3,6 +3,7 @@ import 'github-markdown-css';
 import ReactMarkdown from 'react-markdown';
 
 const QuestionsAnswers = ({ items, theme }) => {
+  console.log('items ===>>> ', items);
   return (
     <dl className="w-full md:w-2/3 mt-12 md:mt-0">
       {items &&

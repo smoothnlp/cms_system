@@ -5,6 +5,8 @@ import PreviewBanner from './global/PreviewBanner';
 import Seo from './seo';
 
 const Layout = ({ children, global, pageData, preview, type }) => {
+  console.log('global ===>> ', global);
+  console.log('pageData ===>> ', pageData);
   return (
     <div>
       <Seo seo={delve(pageData, 'attributes.seo')} />

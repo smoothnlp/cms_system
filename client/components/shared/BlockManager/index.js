@@ -24,6 +24,9 @@ const FeaturesWithImages = dynamic(
 const Hero = dynamic(() => import('../../blocks/Hero'), {
   ssr: true,
 });
+const LandingPageHero = dynamic(() => import('../../blocks/LandingPageHero'), {
+  ssr: true,
+});
 const Pricing = dynamic(() => import('../../blocks/Pricing'), {
   ssr: true,
 });
@@ -64,6 +67,9 @@ const BlockManager = ({ blocks, contentType, pageData, type }) => {
 
           case 'blocks.hero':
             Block = Hero;
+            break;
+          case 'blocks.landing-page-hero':
+            Block = LandingPageHero;
             break;
           case 'blocks.cta':
             Block = Cta;
@@ -140,10 +146,10 @@ const BlockManager = ({ blocks, contentType, pageData, type }) => {
                 <div className="hidden group-hover:block">
                   {contentType} {'>'} {pageData?.id} {'>'} {block.__component}
                 </div>
-                {window.__NEXT_PUBLIC_API_URL && (
+                {process.env.NEXT_PUBLIC_API_URL && (
                   <Link
                     href={`${
-                      window.__NEXT_PUBLIC_API_URL || 'http://localhost:1337'
+                      process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337'
                     }/admin/content-manager/${type}/api::${contentType}.${contentType}/${
                       pageData?.id
                     }?plugins[i18n][locale]=${query?.lang || 'en'}`}

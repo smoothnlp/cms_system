@@ -1,0 +1,82 @@
+.newCommonEnLayout {
+  /* Your existing styles here */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 120px 160px;
+}
+
+.commonContainer {
+  /* Your existing styles here */
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.commonTitleDescContainer {
+  /* Your existing styles here */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 0;
+}
+
+.commonChildren {
+  /* Your existing styles here */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+}
+
+.reason_card {
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.reason_icon {
+  height: 48px;
+  object-fit: contain;
+  width: 48px;
+}
+
+.h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+}
+
+.paragraph {
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+/* You can add more specific styles as needed */

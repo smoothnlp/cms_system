@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agents",
+  "info": {
+    "singularName": "agent",
+    "pluralName": "agents",
+    "displayName": "agent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "background_url": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "output": {
+      "type": "richtext"
+    },
+    "role_definition": {
+      "type": "richtext"
+    },
+    "tagline": {
+      "type": "richtext"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq"
+    },
+    "how": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.cta"
+    },
+    "recommended_section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.extra"
+    },
+    "recommended_section_1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.extra"
+    }
+  }
+}
