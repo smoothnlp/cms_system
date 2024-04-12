@@ -16,6 +16,14 @@
     }
   },
   "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
     "title": {
       "pluginOptions": {
         "i18n": {
@@ -79,6 +87,16 @@
         }
       },
       "component": "blocks.use-cases"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.cta"
     }
   }
 }
